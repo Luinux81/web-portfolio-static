@@ -1,6 +1,10 @@
 /*!*******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
   \*******************************************************************************************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400italic,700italic,400,700);
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss (1) ***!
+  \***********************************************************************************************************************************************/
 /*
 Uso: 
 
@@ -41,7 +45,7 @@ Uso:
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
+.containerrr {
   max-width: 1180px; /* 1 */
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
@@ -105,6 +109,7 @@ html {
 a {
   color: rgb(221, 46, 46);
   text-decoration: none;
+  font-family: inherit;
 }
 a:hover, a:active, a:focus {
   color: red;
@@ -116,217 +121,10 @@ a:hover, a:active, a:focus {
  */
 body {
   color: rgb(255, 255, 255);
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: normal 125%/1.4 "Montserrat", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 h1 {
   color: rgb(221, 46, 46);
   text-transform: uppercase;
-}
-
-body {
-  background-color: black;
-  height: 100vh;
-}
-
-.contenedor {
-  position: relative;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-}
-main .hero {
-  min-height: 20%;
-  margin-bottom: 0.2rem;
-}
-
-.contenido {
-  display: flex;
-}
-.contenido img {
-  max-width: 100%;
-}
-
-.contenido__sidebar--izq {
-  flex-grow: 0;
-  width: 20%;
-}
-.contenido__sidebar--der {
-  flex-grow: 0;
-  width: 20%;
-}
-
-.contenido__central {
-  flex-grow: 1;
-  max-width: 60%;
-  padding: 0 1rem;
-  margin-top: 1rem;
-}
-
-/************************************************/
-/************************************************/
-/* MEDIA QUERIES */
-/************************************************/
-/************************************************/
-@media (min-width: 799px) {
-  .nav__menu--desktop {
-    display: flex;
-  }
-  .nav__menu--movil {
-    display: none;
-  }
-}
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainNav {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-}
-
-.nav__logo {
-  font-size: 2rem;
-  font-weight: bold;
-  width: 200px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 45%;
-  margin: 0 1.5rem;
-}
-
-.nav__menu--desktop {
-  display: none;
-}
-.nav__menu--desktop ul {
-  display: flex;
-  list-style: none;
-}
-.nav__menu--desktop ul li {
-  padding: 10px;
-}
-
-.nav__icono {
-  font-size: 2rem;
-  float: right;
-}
-
-.nav__menudiv {
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-}
-
-.nav__menu--desktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav__menu--desktop .nav-item {
-  padding: 0;
-}
-.nav__menu--desktop .nav-item a {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: black;
-  border: 2px solid white;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 1rem 1.5rem;
-}
-.nav__menu--desktop .nav-item a:hover, .nav__menu--desktop .nav-item a:focus, .nav__menu--desktop .nav-item a:active {
-  color: white;
-}
-
-.contenido__sidebar--izq .slideshowck, .contenido__sidebar--der .slideshowck {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 0.2rem;
-  margin: 1rem 0;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.la-sala h2 {
-  margin: 2rem 0;
-}
-.la-sala h3 {
-  margin: 1rem 0;
-}
-.la-sala ul {
-  list-style-type: none;
-}
-.la-sala li {
-  margin: 0.5rem 0;
-}
-.la-sala .hero {
-  height: 0px;
-  min-height: unset;
-}
-.la-sala .clearfix-hero {
-  display: block;
-  height: 250px;
-}
-
-.home .clearfix-hero, .eventos .clearfix-hero {
-  display: none;
-}
-
-.conecta h2 {
-  color: rgb(221, 46, 46);
-}
-.conecta .crew-emails {
-  list-style-type: circle;
-}
-.conecta .crew-emails li {
-  margin: 1rem 0;
-}
-.conecta .hero {
-  height: 0px;
-  min-height: unset;
-}
-.conecta .clearfix-hero {
-  display: block;
-  height: 250px;
-}
-
-.galeria .hero {
-  height: 0px;
-  min-height: unset;
-}
-.galeria .clearfix-hero {
-  display: block;
-  height: 250px;
-}
-.galeria .contenido__sidebar--izq, .galeria .contenido__sidebar--der {
-  width: 10%;
-}
-.galeria .contenido__central {
-  max-width: unset;
-}
-.galeria .contenido__central .event-thumbnail img {
-  margin-right: 0.25rem !important;
-  margin-left: 0.25rem !important;
-}
-.galeria .contenido__central #events .item-container {
-  margin-bottom: 2rem;
 }
