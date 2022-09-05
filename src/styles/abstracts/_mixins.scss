@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@use 'sass:list';
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Kitty Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($mq_breakpoints, $width) {
+      $width: map_get($mq_breakpoints, $width);
+      @if $type == max {
+          $width: $width - 1px;
+      }
+      @media only screen and (#{$type}-width: $width) {
+          @content;
+      }
+  }
+}
+
+/*
+Uso: 
+
+// $color-primary: #3e60be;
+// $color-secondary: #23ded2;
+// $color-accent: #e5389b;
+// $color-neutral-light: #efefef;
+// $color-neutral-dark: #323232;
+
+// $simple-gradient: $color-primary, $color-secondary;
+// $complex-gradient: $color-primary, $color-secondary, $color-accent;
+
+// $scheme-default: $color-neutral-light, $color-primary;
+// $scheme-secondary: $color-neutral-dark, $color-secondary;
+// $scheme-accent-gradient: $color-neutral-dark, $complex-gradient;
+// $scheme-simple-gradient: $color-neutral-dark, $simple-gradient;
+
+
+@include color-scheme(yellow,black);
+@include color-scheme($scheme-default...);
+@include color-scheme($scheme-accent-gradient...);
+@include color-scheme($scheme-simple-gradient...);
+@include color-scheme(black, (white, black, yellow));
+
+*/
+@mixin color-scheme($texto, $bg){
+  @if list.length($bg) == 1{
+    background-color: $bg;
+  }
+  @else{
+    background-image: linear-gradient(to top left, $bg);
+  }
+  color: $texto;
+}
