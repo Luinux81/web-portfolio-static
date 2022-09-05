@@ -1,0 +1,41 @@
+{
+  "name": "lbc-static-web-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio web estático con soporte para Sass y ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "update-styles": "git subtree pull --prefix src/styles https://github.com/LBC-Starter-Kits/sass-7-1-pattern.git main --squash"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luinux81/web-portfolio.git"
+  },
+
+  "author": "Luis BC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/Luinux81/web-portfolio/issues"
+  },
+  "homepage": "https://https://github.com/Luinux81/web-portfolio#readme",
+
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/polyfill": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.6.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass": "^1.52.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "zip-webpack-plugin": "^4.0.1"
+  }
+}
