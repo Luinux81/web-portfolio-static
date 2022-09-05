@@ -15,7 +15,7 @@
   \***************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://static-web-starter-kit/./src/js/vendors.js?");
+eval("\n\n//# sourceURL=webpack://lbc-static-web-portfolio/./src/js/vendors.js?");
 
 /***/ })
 

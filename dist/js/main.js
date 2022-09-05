@@ -15,7 +15,7 @@
   \*****************************/
 /***/ ((module) => {
 
-eval("function foo() {\n  return \"foo\";\n}\n\nfunction foo2() {\n  return \"foo2\";\n}\n\nmodule.exports = {\n  'foo': foo,\n  'foo2': foo2\n};\n\n//# sourceURL=webpack://static-web-starter-kit/./src/js/functions.js?");
+eval("function foo() {\n  return \"foo\";\n}\n\nfunction foo2() {\n  return \"foo2\";\n}\n\nmodule.exports = {\n  'foo': foo,\n  'foo2': foo2\n};\n\n//# sourceURL=webpack://lbc-static-web-portfolio/./src/js/functions.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("function foo() {\n  return \"foo\";\n}\n\nfunction foo2() {\n  return \"fo
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/js/functions.js\");\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_functions__WEBPACK_IMPORTED_MODULE_0__);\n__webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n\n\nwindow.foo = _functions__WEBPACK_IMPORTED_MODULE_0__.foo; // window.foo2 = functions.foo2;\n\nwindow.addEventListener(\"DOMContentLoaded\", e => {\n  console.log(\"Web cargada!\");\n  console.log(foo());\n  console.log(_functions__WEBPACK_IMPORTED_MODULE_0__.foo2());\n});\n\n//# sourceURL=webpack://static-web-starter-kit/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/js/functions.js\");\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_functions__WEBPACK_IMPORTED_MODULE_0__);\n__webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n\n\nwindow.foo = _functions__WEBPACK_IMPORTED_MODULE_0__.foo; // window.foo2 = functions.foo2;\n\nwindow.addEventListener(\"DOMContentLoaded\", e => {\n  console.log(\"Web cargada!\");\n  console.log(foo());\n  console.log(_functions__WEBPACK_IMPORTED_MODULE_0__.foo2());\n});\n\n//# sourceURL=webpack://lbc-static-web-portfolio/./src/js/index.js?");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fun
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://static-web-starter-kit/./src/styles/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://lbc-static-web-portfolio/./src/styles/main.scss?");
 
 /***/ })
 
