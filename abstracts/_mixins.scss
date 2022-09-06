@@ -46,6 +46,18 @@
   }
 }
 
+
+@mixin typo($scale: 'perfect-fourth', $size){
+  @if $scale == 'perfect-fourth'{
+    $scale: $perfect-fourth;
+  }
+
+  @if map-has-key($map: $scale, $key: $size) {
+    font-size: map_get($scale, $size);
+  }
+}
+
+
 /*
 Uso: 
 
