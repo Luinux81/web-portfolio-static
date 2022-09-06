@@ -3,6 +3,10 @@
     --page-container-width: 90%;
 }
 
+img{
+    max-width: 100%;
+}
+
 .row-container{
     margin: 0 auto;
     width: 100%;
@@ -15,4 +19,35 @@ section{
         padding-top: var(--page-header-altura);
     }
     
+}
+
+section#hero{
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - var(--page-header-altura));
+
+    .hero__col1{
+        width: 50%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero__mainline{
+        color: black;
+    }
+
+    .hero__col2{
+        display: flex;
+        height: inherit;
+        justify-content: flex-end;
+        align-items: center;
+
+        img{
+            width: 80%;
+        }
+    }
 }
