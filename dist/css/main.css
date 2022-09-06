@@ -171,6 +171,7 @@ section#hero .hero__col1 {
 }
 section#hero .hero__mainline {
   color: black;
+  font-size: 3.157rem;
 }
 section#hero .hero__col2 {
   display: flex;

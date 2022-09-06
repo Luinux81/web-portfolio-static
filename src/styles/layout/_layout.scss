@@ -38,6 +38,7 @@ section#hero{
 
     .hero__mainline{
         color: black;
+        @include typo('xxl');
     }
 
     .hero__col2{
