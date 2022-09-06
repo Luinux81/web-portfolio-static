@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.boton{
+    padding: .5rem 1rem;
+    text-align: center;
+    border-radius: 5px;
+
+    &--azul{
+        color: white;
+        background-color: $brand-color;
+
+        &:hover{
+            color: $brand-color;
+            background-color: $brand-color-tint-1;
+        }
+    }
+}
+

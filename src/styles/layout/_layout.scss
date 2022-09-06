@@ -33,12 +33,21 @@ section#hero{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
+        text-align: center;
     }
 
     .hero__mainline{
-        color: black;
+        color: black;        
         @include typo($size: 'xxl');
+    }
+
+    .hero__subline{
+        color: $mid-grey;
+        font-weight: normal;
+        @include typo($size: 'm');
+
+        margin-bottom: 3rem;
     }
 
     .hero__col2{
