@@ -32,7 +32,7 @@ a {
   font-family: inherit;
 
   @include on-event {
-    color: red;
+    color: $brand-color-tint-1;
     text-decoration: none;
   }
 }
