@@ -88,6 +88,12 @@ $perfect-fourth : (
   "xxxl": 4.209rem,
 );
 
+/**
+* Escalas tipográficas
+*/
+$typo-scales : (
+  "perfect-fourth": $perfect-fourth,
+);
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

@@ -47,13 +47,17 @@
 }
 
 
-@mixin typo($scale: 'perfect-fourth', $size){
-  @if $scale == 'perfect-fourth'{
+@mixin typo($size, $scale: 'perfect-fourth'){
+  @if map-has-key($map: $typo-scales, $key: $scale ){
+    $scale: map-get($map: $typo-scales, $key: $scale)
+  }
+  @else{
     $scale: $perfect-fourth;
   }
 
+
   @if map-has-key($map: $scale, $key: $size) {
-    font-size: map_get($scale, $size);
+    font-size: map-get($scale, $size);
   }
 }
 
