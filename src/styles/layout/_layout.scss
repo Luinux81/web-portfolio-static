@@ -38,7 +38,7 @@ section#hero{
 
     .hero__mainline{
         color: black;
-        @include typo('xxl');
+        @include typo($size: 'xxl');
     }
 
     .hero__col2{
