@@ -1,7 +1,7 @@
 /*!*******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
   \*******************************************************************************************************************************************/
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400italic,700italic,400,700);
 /*!***********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss (1) ***!
   \***********************************************************************************************************************************************/
@@ -107,12 +107,12 @@ html {
  * Basic styles for links
  */
 a {
-  color: rgb(221, 46, 46);
+  color: #2842C5;
   text-decoration: none;
   font-family: inherit;
 }
 a:hover, a:active, a:focus {
-  color: red;
+  color: #8CCEEB;
   text-decoration: none;
 }
 
@@ -120,11 +120,80 @@ a:hover, a:active, a:focus {
  * Basic typography style for copy text
  */
 body {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font: normal 125%/1.4 "Montserrat", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 h1 {
-  color: rgb(221, 46, 46);
+  color: #2842C5;
   text-transform: uppercase;
+}
+
+:root {
+  --page-header-altura: 70px;
+  --page-container-width: 90%;
+}
+
+.row-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--page-container-width);
+}
+
+section {
+  min-height: 100vh;
+}
+section:not(section:nth-of-type(1)) {
+  padding-top: var(--page-header-altura);
+}
+
+.clearfix-top {
+  display: table;
+  height: var(--page-header-altura);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--page-header-altura);
+  z-index: 2;
+  background-color: white;
+}
+header .row-container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  height: inherit;
+}
+header .logo__imagen {
+  height: calc(100% - 1.5rem);
+  margin: auto 0;
+}
+header .logo__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  letter-spacing: 2px;
+}
+header .logo:hover {
+  color: #2842C5;
+}
+
+.nav-top ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-top ul a {
+  margin: 0.5rem 1rem;
+  padding: 1rem 1rem;
 }
