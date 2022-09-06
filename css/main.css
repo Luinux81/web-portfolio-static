@@ -170,11 +170,18 @@ section#hero .hero__col1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  text-align: center;
 }
 section#hero .hero__mainline {
   color: black;
   font-size: 3.157rem;
+}
+section#hero .hero__subline {
+  color: rgb(153, 153, 153);
+  font-weight: normal;
+  font-size: 1.333rem;
+  margin-bottom: 3rem;
 }
 section#hero .hero__col2 {
   display: flex;
@@ -235,4 +242,18 @@ header .logo:hover {
 .nav-top ul a {
   margin: 0.5rem 1rem;
   padding: 1rem 1rem;
+}
+
+.boton {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.boton--azul {
+  color: white;
+  background-color: #2842C5;
+}
+.boton--azul:hover {
+  color: #2842C5;
+  background-color: #8CCEEB;
 }
