@@ -1,3 +1,49 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+footer{
+    width: 100%;
+    height: var(--page-footer-altura);
+    background-color: darken($brand-color, 20%);
+
+    .row-container{
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        display: flex;
+        height: inherit;
+
+        &__imagen{
+            height: calc(100% - 1.5rem);
+            margin: auto 0;
+        }
+
+        &__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 1rem;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        &:hover{
+            color: white;
+        }
+    }
+
+    .nav-top{
+        a{
+            color: white;
+
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}

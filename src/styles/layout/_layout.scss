@@ -1,5 +1,6 @@
 :root{
     --page-header-altura: 70px;
+    --page-footer-altura: 70px;
     --page-container-width: 90%;
 }
 
@@ -57,13 +58,15 @@ section#hero{
     }
 
     .hero__col2{
+        width: 50%;
         display: flex;
         height: inherit;
         justify-content: flex-end;
         align-items: center;
 
         img{
-            width: 80%;
+            width: 90%;
+            border-radius: 20px;
         }
     }
 }
