@@ -94,6 +94,7 @@ Uso:
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -158,6 +159,12 @@ section:not(section:nth-of-type(1)) {
   padding-top: var(--page-header-altura);
 }
 
+h2.titulo {
+  display: block;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 section#hero {
   display: flex;
   flex-wrap: nowrap;
@@ -191,6 +198,19 @@ section#hero .hero__col2 {
 }
 section#hero .hero__col2 img {
   width: 80%;
+}
+
+section#servicios .servicios__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+}
+section#servicios .servicios__grid > .card {
+  width: 25%;
 }
 
 .clearfix-top {
@@ -256,4 +276,21 @@ header .logo:hover {
 .boton--azul:hover {
   color: #2842C5;
   background-color: #8CCEEB;
+}
+
+.card--servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card--servicios img {
+  height: 80px;
+  width: 80px;
+}
+.card--servicios .card__titulo {
+  margin: 1rem auto;
+}
+.card--servicios p {
+  text-align: center;
 }

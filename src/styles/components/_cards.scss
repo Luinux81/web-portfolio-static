@@ -1,0 +1,27 @@
+.card{
+
+}
+
+.card--servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .card__titulo{
+        margin: 1rem auto;
+    }
+
+    .card__texto{
+        
+    }
+
+    p{
+        text-align: center;
+    }
+}
