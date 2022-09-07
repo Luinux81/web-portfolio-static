@@ -139,6 +139,7 @@ h1 {
 
 :root {
   --page-header-altura: 70px;
+  --page-footer-altura: 70px;
   --page-container-width: 90%;
 }
 
@@ -191,13 +192,15 @@ section#hero .hero__subline {
   margin-bottom: 3rem;
 }
 section#hero .hero__col2 {
+  width: 50%;
   display: flex;
   height: inherit;
   justify-content: flex-end;
   align-items: center;
 }
 section#hero .hero__col2 img {
-  width: 80%;
+  width: 90%;
+  border-radius: 20px;
 }
 
 .grid {
@@ -265,6 +268,43 @@ header .logo:hover {
 .nav-top ul a {
   margin: 0.5rem 1rem;
   padding: 1rem 1rem;
+}
+
+footer {
+  width: 100%;
+  height: var(--page-footer-altura);
+  background-color: #172670;
+}
+footer .row-container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .logo {
+  display: flex;
+  height: inherit;
+}
+footer .logo__imagen {
+  height: calc(100% - 1.5rem);
+  margin: auto 0;
+}
+footer .logo__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  letter-spacing: 2px;
+  color: white;
+}
+footer .logo:hover {
+  color: white;
+}
+footer .nav-top a {
+  color: white;
+}
+footer .nav-top a:hover {
+  color: white;
 }
 
 .boton {
