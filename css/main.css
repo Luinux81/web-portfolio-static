@@ -315,6 +315,7 @@ footer .nav-top a:hover {
 .boton--azul {
   color: white;
   background-color: #2842C5;
+  border: none;
 }
 .boton--azul:hover {
   color: #2842C5;
@@ -377,4 +378,30 @@ footer .nav-top a:hover {
 .card--proyectos .badges img {
   height: 40px;
   width: auto;
+}
+
+.form--contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.form--contacto button {
+  margin-bottom: 3rem;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.input-group label {
+  width: 30%;
+}
+.input-group input, .input-group textarea {
+  width: 70%;
+  padding: 7px 5px;
 }
