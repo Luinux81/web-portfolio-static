@@ -1,0 +1,30 @@
+.form--contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 70%;
+    margin: 0 auto;
+
+    button{
+        margin-bottom: 3rem;
+    }
+}
+
+.input-group{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 2rem;
+
+    label{
+        width: 30%;
+    }
+
+    input, textarea{
+        width: 70%;
+        padding: 7px 5px;
+    }
+}
