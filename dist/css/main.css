@@ -200,7 +200,7 @@ section#hero .hero__col2 img {
   width: 80%;
 }
 
-section#servicios .servicios__grid {
+.grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -209,7 +209,10 @@ section#servicios .servicios__grid {
   gap: 3rem;
   width: 100%;
 }
-section#servicios .servicios__grid > .card {
+.grid--servicios > .card {
+  width: 25%;
+}
+.grid--proyectos > .card {
   width: 25%;
 }
 
@@ -278,12 +281,15 @@ header .logo:hover {
   background-color: #8CCEEB;
 }
 
-.card--servicios {
+.card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  isolation: isolate;
 }
+
 .card--servicios img {
   height: 80px;
   width: 80px;
@@ -291,6 +297,44 @@ header .logo:hover {
 .card--servicios .card__titulo {
   margin: 1rem auto;
 }
-.card--servicios p {
+.card--servicios .card__texto {
   text-align: center;
+}
+
+.card--proyectos {
+  border: 1px solid rgb(237, 237, 237);
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card--proyectos .proyecto__imagen {
+  width: 100%;
+  z-index: 1;
+}
+.card--proyectos .icono--ver {
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 50%;
+  padding: 0.5rem 0.15rem;
+  position: relative;
+  float: right;
+  margin-top: -33px;
+  margin-right: 10px;
+  z-index: 2;
+}
+.card--proyectos .proyecto__info {
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  color: black;
+}
+.card--proyectos .proyecto__info:hover {
+  color: black;
+}
+.card--proyectos .badges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card--proyectos .badges img {
+  height: 40px;
+  width: auto;
 }

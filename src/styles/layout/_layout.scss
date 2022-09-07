@@ -68,16 +68,24 @@ section#hero{
     }
 }
 
-section#servicios{
-    .servicios__grid{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 3rem;
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
 
-        width: 100%;
+    width: 100%;
+
+    &--servicios{
+        & > .card{
+            width: 25%;
+        }
+    }
+
+    &--proyectos{
+        // justify-content: flex-start;
 
         & > .card{
             width: 25%;

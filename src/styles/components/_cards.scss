@@ -1,13 +1,15 @@
 .card{
+    position: relative;
 
-}
-
-.card--servicios{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
+    isolation: isolate;
+}
+
+.card--servicios{
     img{
         height: 80px;
         width: 80px;
@@ -18,10 +20,53 @@
     }
 
     .card__texto{
-        
+        text-align: center;
+    }
+}
+
+.card--proyectos{
+
+    border: 1px solid $light-grey;
+    box-shadow: 4px 4px 10px 1px rgb(0 0 0 / 10%);
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    .proyecto__imagen{
+        width: 100%;
+        z-index: 1;
     }
 
-    p{
-        text-align: center;
+    .icono--ver{
+        background-color: white;
+        border: 2px black solid;
+        border-radius: 50%;
+        padding: .5rem 0.15rem;
+
+        position: relative;
+        float: right;
+        margin-top: -33px;
+        margin-right: 10px;
+        z-index: 2;
+    }
+
+    .proyecto__info{
+        padding: .5rem .5rem 1rem .5rem;
+        color:black;
+
+        &:hover{
+            color:black;
+        }
+    }
+
+    .badges{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        img{
+            height: 40px;
+            width: auto;
+        }
     }
 }
