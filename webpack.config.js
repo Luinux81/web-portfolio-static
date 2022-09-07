@@ -48,6 +48,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: "./src/index.html", to: "index.html" },
+                { from: "./src/favicon.ico", to: "favicon.ico" },
                 { from: path.resolve(__dirname,"src","assets"), to: "images" },
                 // { from: path.resolve(__dirname,"src","html"), to: "html" },
                 // { from: path.resolve(__dirname,"vendor"), to: "vendor" },
