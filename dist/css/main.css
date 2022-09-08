@@ -152,6 +152,12 @@ img {
   width: 100%;
   max-width: var(--page-container-width);
 }
+@media only screen and (max-width: 899px) {
+  .row-container {
+    max-width: unset;
+    margin: 0 1rem;
+  }
+}
 
 .block-height {
   max-height: 100vh;
@@ -172,9 +178,11 @@ h2.titulo {
 }
 
 section#hero {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   height: calc(100vh - var(--page-header-altura));
+  isolation: isolate;
 }
 section#hero .hero__col1 {
   width: 50%;
@@ -186,15 +194,58 @@ section#hero .hero__col1 {
   gap: 1rem;
   text-align: center;
 }
+@media only screen and (max-width: 899px) {
+  section#hero .hero__col1 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
 section#hero .hero__mainline {
   color: black;
   font-size: 3.157rem;
+}
+@media only screen and (max-width: 1023px) {
+  section#hero .hero__mainline {
+    font-size: 2.369rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section#hero .hero__mainline {
+    font-size: 1.777rem;
+  }
+}
+@media only screen and (max-width: 639px) {
+  section#hero .hero__mainline {
+    font-size: 1.333rem;
+  }
 }
 section#hero .hero__subline {
   color: rgb(153, 153, 153);
   font-weight: normal;
   font-size: 1.333rem;
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 899px) {
+  section#hero .hero__subline {
+    color: rgb(68, 68, 68);
+  }
+}
+@media only screen and (max-width: 1023px) {
+  section#hero .hero__subline {
+    font-size: 1.777rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section#hero .hero__subline {
+    font-size: 1.333rem;
+  }
+}
+@media only screen and (max-width: 639px) {
+  section#hero .hero__subline {
+    font-size: 1rem;
+  }
 }
 section#hero .hero__col2 {
   width: 50%;
@@ -203,9 +254,25 @@ section#hero .hero__col2 {
   justify-content: flex-end;
   align-items: center;
 }
+@media only screen and (max-width: 899px) {
+  section#hero .hero__col2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
+}
 section#hero .hero__col2 img {
   width: 90%;
   border-radius: 20px;
+}
+@media only screen and (max-width: 899px) {
+  section#hero .hero__col2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    opacity: 0.2;
+  }
 }
 
 .grid {
@@ -233,7 +300,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: var(--page-header-altura);
   z-index: 2;
   background-color: white;
