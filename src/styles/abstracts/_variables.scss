@@ -27,7 +27,10 @@ $text-color: rgb(0, 0, 0) !default;
 /// Main brand color and variations
 /// @type Color
 $brand-color: #2842C5 !default;
+
 $brand-color-shade-1 : #2E86AC !default;
+$brand-color-shade-2 : darken($brand-color, 20%);
+
 $brand-color-tint-1 : #8CCEEB !default;
 $brand-color-alt-1 : #00C2FF !default;
 

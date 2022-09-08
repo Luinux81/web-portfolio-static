@@ -43,6 +43,15 @@ header{
             color: $brand-color;
         }
     }
+
+    .icono--menu{
+        display: none;
+        cursor: pointer;
+
+        @include mq('900', 'max'){
+            display: inline-block;
+        }
+    }
 }
 
 .nav-top{
@@ -57,5 +66,9 @@ header{
             margin: .5rem 1rem;
             padding: 1rem 1rem;
         }
+    }
+
+    @include mq('900', 'max'){
+        display: none;
     }
 }
