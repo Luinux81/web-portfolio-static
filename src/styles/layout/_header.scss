@@ -62,9 +62,19 @@ header{
         justify-content: flex-end;
         align-items: center;
 
-        a{
+        li{
             margin: .5rem 1rem;
             padding: 1rem 1rem;
+
+            &:nth-last-child(1){
+                margin: .5rem 0 .5rem 1rem;
+                padding: 1rem 0 1rem 1rem;
+            }
+        }
+
+        a{
+            // margin: .5rem 1rem;
+            // padding: 1rem 1rem;
         }
     }
 

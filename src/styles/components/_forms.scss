@@ -7,6 +7,10 @@
     width: 70%;
     margin: 0 auto;
 
+    // @include mq('tablet-wide', 'max'){
+    //     width: 80%;
+    // }
+
     button{
         margin-bottom: 3rem;
     }
@@ -19,12 +23,25 @@
     width: 100%;
     margin-bottom: 2rem;
 
+    @include mq('tablet-wide', 'max'){
+        flex-direction: column;
+    }
+
     label{
         width: 30%;
+        
+        @include mq('tablet-wide', 'max'){
+            width: 100%;
+        }
     }
 
     input, textarea{
         width: 70%;
-        padding: 7px 5px;
+        padding: 15px 5px;
+        margin: 1rem auto;
+
+        @include mq('tablet-wide', 'max'){
+            width: 100%;
+        }
     }
 }

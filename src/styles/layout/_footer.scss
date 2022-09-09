@@ -7,11 +7,19 @@ footer{
     height: var(--page-footer-altura);
     background-color: darken($brand-color, 20%);
 
+    @include mq('tablet-small', 'max'){
+        height: unset;
+    }
+
     .row-container{
         height: inherit;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mq('tablet-small', 'max'){
+            flex-direction: row-reverse;
+        }
     }
 
     .logo{
@@ -21,6 +29,10 @@ footer{
         &__imagen{
             height: calc(100% - 1.5rem);
             margin: auto 0;
+
+            @include mq('tablet-small', 'max'){
+                height: 50px;
+            }
         }
 
         &__texto{
@@ -37,12 +49,34 @@ footer{
         }
     }
 
-    .nav-top{
+    .nav-bottom{
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+
+            @include mq('tablet-small', 'max'){
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 1rem 0;
+            }
+        }
+
+        li{
+            margin: 0 1rem;
+
+            &:nth-last-child(1){
+                margin-right: 0;
+            }
+        }
+
         a{
             color: white;
 
             &:hover{
-                color: white;
+                color: $brand-color-tint-1;
             }
         }
     }
