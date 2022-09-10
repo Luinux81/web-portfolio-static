@@ -2,7 +2,6 @@ const path = require("path");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-// var ZipPlugin = require('zip-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -49,19 +48,8 @@ module.exports = {
             patterns: [
                 { from: "./src/index.html", to: "index.html" },
                 { from: "./src/favicon.ico", to: "favicon.ico" },
-                { from: path.resolve(__dirname,"src","assets"), to: "images" },
-                // { from: path.resolve(__dirname,"src","html"), to: "html" },
-                // { from: path.resolve(__dirname,"vendor"), to: "vendor" },
-                // { from: "./src/favicon.ico", to: "favicon.ico" },
-                // { from: "./src/index.php", to: "index.php" },
-                // { from: "./src/template_preview.png", to: "template_preview.png" },
-                // { from: "./src/template_thumbnail.png", to: "template_thumbnail.png" },
-                // { from: "./src/templateDetails.xml", to: "templateDetails.xml" },                
+                { from: path.resolve(__dirname,"src","assets"), to: "images" },              
             ],
-        }),
-        // new ZipPlugin({
-        //     path : '../dist_zip',
-        //     filename : 'j3_template_base.zip'
-        // }),
+        })
     ],
 };
